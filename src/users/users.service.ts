@@ -13,11 +13,6 @@ export class UsersService {
     ) { }
 
     public async create(createUserDto: CreateUserDto): Promise<User> {
-        // const user = new User();
-        // user.email = createUserDto.email;
-        // user.name = createUserDto.name;
-        // user.hashedPassword = createUserDto.password;
-
         const saveUser = Object.assign(new User(), { ...createUserDto, hashedPassword: createUserDto.password });
 
         return this.usersRepository.save(saveUser);
