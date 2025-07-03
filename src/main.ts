@@ -10,7 +10,7 @@ async function bootstrap() {
         whitelist: true,
         //* erro se mandar campo desconhecido
         forbidNonWhitelisted: true,
-        // //* transforma tipos
+        // //* transforma tipos (???)
         // transform: true
     }))
 
